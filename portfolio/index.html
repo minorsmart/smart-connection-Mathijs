@@ -3,66 +3,299 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Mijn Portfolio</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="index.html">Smart Industry</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav nav" role="tablist">
-                <a class="nav-item nav-link" data-toggle="tab" href="#start" id="start-tab" role="tab"
-                    aria-controls="start" aria-selected="true"><i class="fa fa-fw fa-home"></i>Start <span
-                        class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link" data-toggle="tab" href="#business" id="business-tab" role="tab"
-                    aria-controls="business" aria-selected="true"><i class="fa fa-handshake-o"></i> Business</a>
-                <a class="nav-item nav-link" data-toggle="tab" href="#connection" id="connection-tab" role="tab"
-                    aria-controls="connection" aria-selected="true"><i class="fa fa-code"></i> Connection</a>
-                <a class="nav-item nav-link" data-toggle="tab" href="#technology" id="technology-tab" role="tab"
-                    aria-controls="technology" aria-selected="true"><i class="fa fa-cog"></i> Technology</a>
-                <a class="nav-item nav-link" data-toggle="tab" href="#project" id="project-tab" role="tab"
-                    aria-controls="project" aria-selected="true"><i class="fa fa-rocket"></i> Project</a>
+    <div class="sidebar">
+        <img src="/Portfolio/foto's/Profielfoto.jpg" alt="profielfoto" width="320">
+        <h1> Mathijs van Drueten </h1>
+        <p>Leeftijd: 22 <br> Opleiding: Logistics Management <br> Minor: Smart Industry <br> Studentnummer: 639197 <br> Hobby's: Skiën, motorrijden, gamen en sporten</p>
+    </div>
+    <div class="main">
+        <div class="row">
+            <div class="column">
+                <div class="card" onclick="onPlant()">
+                    <div class="container">
+                        <img src="/Portfolio/foto's/Plant.avif" alt="Plant" height="250" class="center">
+                        <h4><b>Plantsysteem</b></h4>
+                        <p>In dit artikel vertel ik over een systeem die automatisch mijn plant water en licht geeft!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card" onclick="onCamera()">
+                    <div class="container">
+                        <img src="/Portfolio/foto's/Wildcamera.jpg" alt="Wildcamera" height="250" class="center">
+                        <h4><b>Wildcamera</b></h4>
+                        <p>In dit artikel vertel ik over een opdracht dit ik kreeg om te kijken naar de mogelijkheden voor een wildcamera systeem.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card" onclick="onBezoeken()">
+                    <div class="container">
+                        <img src="/Portfolio/foto's/Bedrijfsbezoek.jpg" alt="Bedrijfsbezoek" height="250" class="center">
+                        <h4><b>Bedrijfsbezoeken</b></h4>
+                        <p>In dit artikel vertel ik over mijn ervaringen bij de verschillende bedrijfsbezoeken die we hebben gehad tijdens de minor.</p>
+                    </div>
+                </div>
             </div>
         </div>
-    </nav>
-    <div class="tab-content container">
-        <div class="tab-pane active fade show" id="start" role="tabpanel" aria-labelledby="start-tab">
-            <p>I'm in Start</p>
+        <div class="row">
+            <div class="column">
+                <div class="card" onclick="onBusiness()">
+                    <div class="container">
+                        <img src="/Portfolio/foto's/BMC.png" alt="BMC" height="250" class="center">
+                        <h4><b>Business lessen</b></h4>
+                        <p>In dit artikel vertel ik over wat ik geleerd heb tijdens de lessen over business.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card" onclick="onWebsite()">
+                    <div class="container">
+                        <img src="/Portfolio/foto's/Website.jpg" alt="Website" height="250" class="center">
+                        <h4><b>Website</b></h4>
+                        <p>In dit artikel vertel ik over wat ik heb geleerd van het werken aan mijn website.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card" onclick="onBestelportaal()">
+                    <div class="container">
+                        <img src="/Portfolio/foto's/Login.png" alt="Login" height="250" class="center">
+                        <h4><b>Bestelportaal</b></h4>
+                        <p>In dit artikel vertel ik over wat ik heb geleerd op het gebied van het coderen van een bestelportaal.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card" onclick="onOnderzoek()">
+                    <div class="container">
+                        <img src="/Portfolio/foto's/Heel Metaal.jpg" alt="Hele Metaal" height="250" class="center">
+                        <h4><b>Onderzoek Klantportaal</b></h4>
+                        <p>In dit artikel vertel ik over het onderzoek dat ik heb uitgevoerd bij Heel Metaal B.V.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card" onclick="onOplossing()">
+                    <div class="container">
+                        <img src="/Portfolio/foto's/Oplossing.jpg" alt="Oplossing" height="250" class="center">
+                        <h4><b>Oplossing van het onderzoek</b></h4>
+                        <p>In dit artikel vertel ik over de oplossing die we hebben gevonden voor het onderzoek</p>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card" onclick="onSamenwerking()">
+                    <div class="container">
+                        <img src="/Portfolio/foto's/Samenwerking.jpg" alt="Samenwerking" height="250" class="center">
+                        <h4><b>Samenwerking met Lars</b></h4>
+                        <p>In dit artikel vertel ik over mijn samenwerking met Lars tijdens het uitvoeren van het project.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card" onclick="onOntwikkeling()">
+                    <div class="container">
+                        <img src="/Portfolio/foto's/Persoonlijke ontwikkeling.webp" alt="persoonlijke ontwikkeling" height="250" class="center">
+                        <h4><b>Persoonlijke ontwikkeling</b></h4>
+                        <p>In dit artikel vertel ik over mijn persoonlijke ontwikkeling die ik heb meegemaakt tijdens de hele minor.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="tab-pane fade" id="business" role="tabpanel" aria-labelledby="business-tab">
-            <p>I'm in Business</p>
+        <div id="overlay1" onclick="offPlant()">
+            <div class="text">
+                <h1>Plantsysteem</h1>
+                <p>
+                    Tijdens de minor hebben we tijdens de lessen van Smart Technology gewerkt aan een project waarbij we een systeem hebben gecodeerd die automatisch een plant water en licht geeft.
+                    <br>Ik ging deze minor in zonder kennis over de programeertaal, sensoren, microprocessors en breadboards. 
+                    <br>Tijdens de eerste lessen zijn we vooral bezig geweest met alle sensoren 1 voor 1 goed programmeren zodat deze werkte op zichzelf.
+                    <br>Ik merkte al vrij snel dat hier voor mij veel interesse in lag. Als ik thuis kwam ging ik hier vaak mee verder.
+                </p>
+                <p>
+                    Ik ging vrij vlot door de stof heen en alles werkte perfect. Naast de basis opdrachten ben ik verder gaan denken over mogelijkheden en optimalisaties.
+                    <br>1 van de problemen die ik interessant vond is het werken met de timers. Hoe programmeer je het zodat het aan en uit gaat met de juiste tijd ertussen.
+                    <br>Zo moet de lamp alleen savonds aan en niet overdag. De LDR sensor meet hoe licht het is en met deze waarde wordt bepaald wanneer de lamp aan gaat.
+                    <br>Het probleem is dat de lamp vervolgens de LDR belicht waardoor het volgens de sensor weer licht genoeg is en de lamp weer uit kan.
+                    <br>Om te voorkomen dat de lamp gaat knipperen heb ik ervoor gekozen om om de 15 minuten de lamp uit te zetten en de sensor te laten controleren of het nog donker genoeg is.
+                    <br>Op deze manier knippert de lamp maar eens in de 15 minuten. 
+                </p>
+                <p>
+                    Als doel had ik voor de minor gesteld dat ik graag wou weten of ik na mijn studie Logistics Management nog een studie wil gaan doen.
+                    <br>Ik heb altijd al interesse gehad in coderen en zat te kijken naar een mogelijke vervolgstudie in de ICT.
+                    <br>Puzzeltjes oplossing vind ik erg leuk, dat is ook een rede waarom ik wiskunde leuk vind om te doen. Ik hoopte deze puzzels ook op te moeten lossen bij Logistics Management.
+                    <br>Het bleek dat dit een stuk minder aanwezig was dan ik had gehoopt. Tijdens het coderen vond ik deze puzzels wel terug.
+                    <br>Wanneer een stukje code niet werkte vond ik het leuk om uit te vogelen waar het probleem lag en hoe ik daar omheen kon werken.
+                    <br>Na aanleiding van het programmeren van dit plantsysteem heb ik besloten om te gaan zoeken naar een geschikte studie voor als ik afgestudeerd ben.
+                </p>
+            </div>
         </div>
-        <div class="tab-pane fade" id="connection" role="tabpanel" aria-labelledby="connection-tab">
-            <p>I'm in Connection</p>
+        <div id="overlay2" onclick="offCamera()">
+            <div class="text">
+                <h1>Wildcamera</h1>
+                <p>
+                    Het coderen van het plantsysteem beviel mij erg goed. Ik vertelde hier enthousiast over tijdens de tennistraining.
+                    <br>Mijn trainer kwam vervolgens naar mij toe en vertelde dat hij laatst een wildcamera had gekocht die redelijk duur was. Hij vroeg of zoiets ook mogelijk was met een microcontroller.
+                    <br>Ik had de verwachting dat dat wel mogelijk moest zijn en heb het verder uitgezocht. Ik heb hierbij geleerd over PIR-sensors, transmitters en hoe AUX-kabels werken.
+                    <br>Vervolgens kocht ik een 2 ESP-8266, een PIR-sensor en twee tranceivers (kan zowel radiosignalen verzenden als ontvangen). 
+                </p>
+                <p>
+                    Ik ben begonnen met de PIR-sensor leren kennen. Deze werkt door het passief ontvangen van infrarood signalen.
+                    <br>De PIR-sensor is verdeeld in een aantal zones en leest binnen een zone de infrarood af. Zodra de waarde in een zone minder wordt stuur het een signaaltje.
+                    <br>Dit signaaltje komt binnen in de ESP die daardoor getriggerd wordt. Met deze trigger wordt er een berichtje verstuurd via de transmitter.
+                    <br>Het berichtje wordt opgevangen door een ontvanger die vervolgens de camera aanzet en begint met filmen.
+                </p>
+                <p>
+                    In het begin hoopte ik dat ik de signalen van de originele wildcamera kon opvangen en omzetten naar een code zodat ik die met mijn eigen tranceivers kon verzenden.
+                    <br>Dit bleek moeilijker te zijn dan ik had verwacht op de golflengte waar de wildcamera op werkte. Ik moest dus iets anders verzinnen.
+                    <br>In plaats van de receiver van de originele wildcamera te gebruiken heb ik naast de camera een ESP geplaatst met een receiver. Deze ontvangt dan een signaal dat de PIR-sensor iets ziet.
+                </p>
+                <p>
+                    Het volgende probleem was het aanzetten van de camera. Omdat ik niet de originele ontvanger gebruikte moest ik uitvogelen hoe die werkte om dat te kopieëren.
+                    <br>Ik heb geleerd dat een AUX-kabel eigenlijk 3 draadjes zijn die in verschillende combinaties stroompjes kunnen versturen.
+                    <br>De camera heeft een AUX-poort waar de kabel in kan en verschillende combinaties zetten bijvoorbeeld de camera aan, stellen scherp of maken een foto/filmpje.
+                    <br>Ik heb een AUX-kabel door midden geknipt een aangesloten op een relay zodat ik die combinaties kon maken.
+                    <br>Zodra de receiver een berichtje ontvangt wordt de relay geactiveerd. De AUX-kabel geeft de camera een stroompje en deze wordt dan wakker en begint met filmen.
+                </p>
+            </div>
         </div>
-        <div class="tab-pane fade" id="technology" role="tabpanel" aria-labelledby="technology-tab">
-            <p>I'm in Technology</p>
+        <div id="overlay3" onclick="offBezoeken()">
+            <div class="text">
+                <h1>Bedrijfsbezoeken</h1>
+                <p>
+                    Tijdens de minor zijn we voor het van Smart Business naar verschillende bedrijven gegaan om te kijken hoe het daar werkte.
+                    <br>Het eerste bedrijf was de Meshallen. Op deze plek hadden we de helft van de tijd les, maar we kregen ook een rondleiding.
+                    <br>De Meshallen is een pand waar verschillende bedrijven samen zitten zodat ze makkelijk samenwerkingen kunnen aangaan om elkaar te helpen.
+                    <br>Ook worden er schoolmeubels geproduceerd in de fabriek. Het was erg interessant om daar een rondleiding te krijgen door de unieke opstelling van de kantoren.
+                    <br>Het gebouw funcioneerde als een showroom en tegelijkertijd als werkruimte.
+                </p>
+                <p>
+                    Naast de Meshallen zijn we ook naar het bedrijf Elk gegaan. Bij Elk werken ze aan de hand van agile.
+                    <br>De dag begon met een rondleiding en het viel al snel op dat er veel borden hingen met veel post-its. Eén keer per week komen ze daar samen om de week te bespreken.
+                    <br>Deze manier van werken kwam mij al bekend voor vanuit de theorie die ik heb meegekregen vanuit mijn opleiding.
+                    <br>Het was leuk om te zien dat de theorie ook daadwerkelijk in de praktijk wordt toegepast en hoe dat dan gaat.
+                </p>
+            </div>
         </div>
-        <div class="tab-pane fade" id="project" role="tabpanel" aria-labelledby="project-tab">
-            <p>I'm in Project</p>
+        <div id="overlay4" onclick="offBusiness()">
+            <div class="text">
+                <h1>Business lessen</h1>
+                <p>
+                    Smart business heeft mij veel geleerd over verschillende thema's. Zo hebben we het gehad over de Business Model Canvas (BMC) en scrum.
+                    <br>De eerste keer dat we kennis hebben gemaakt met het BMC was tijdens een casus van AXA.
+                    <br>Een BMC wordt gebruikt om eerst de huidige situatie in kaart te brengen van een bedrijf.
+                    <br>Vervolgens wordt er nagedacht over de oplossing en hoe dat de huidige situatie veranderd. Op deze manier wordt het duidelijk wat de gevolgen zijn van de oplossing.
+                </p>
+                <img src="/Portfolio/foto's/BMC AXA.jpg" alt="BMC axa" height="250">
+                <p>
+                    Tijdens het bezoek aan Elk hebben we een workshop gehad over de werkmethode scrum. Bij deze methode wordt er gewerkt in sprintperiodes van 2-4 weken.
+                    <br>Bij een project kun je ervoor kiezen om via deze methode te werken. In het begin stel je een aantal onderdelen op die je wil uitwerken.
+                    <br>Per sprint bepaal je welke onderdelen je die sprint wil afronden.
+                    <br>Aan het einde van de sprint bespreek je met de groep en opdrachtgever de resultaten om vervolgens de onderdelen voor de volgende sprint te bepalen.
+                    <br>Het voordeel van deze methode is dat je een goed idee krijgt hoe lang het project nog ongeveer duurt en dat je de opdrachtgever tussendoor bijlicht over de voortgang.
+                </p>
+            </div>
+        </div>
+        <div id="overlay5" onclick="offWebstie()">
+            <div class="text">
+                <h1>test5</h1>
+            </div>
+        </div>
+        <div id="overlay6" onclick="offBestelportaal()">
+            <div class="text">
+                <h1>test6</h1>
+            </div>
+        </div>
+        <div id="overlay7" onclick="offOnderzoek()">
+            <div class="text">
+                <h1>test7</h1>
+            </div>
+        </div>
+        <div id="overlay8" onclick="offOplossing()">
+            <div class="text">
+                <h1>test8</h1>
+            </div>
+        </div>
+        <div id="overlay9" onclick="offSamenwerking()">
+            <div class="text">
+                <h1>test9</h1>
+            </div>
+        </div>
+        <div id="overlay10" onclick="offOntwikkeling()">
+            <div class="text">
+                <h1>test10</h1>
+            </div>
         </div>
     </div>
-
-    <!-- FOR BOOTSTRAP -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-
+    <script>
+        function onPlant() {
+            document.getElementById("overlay1").style.display = "block";
+        }
+        function offPlant() {
+            document.getElementById("overlay1").style.display = "none";
+        }
+        function onCamera() {
+            document.getElementById("overlay2").style.display = "block";
+        }
+        function offCamera() {
+            document.getElementById("overlay2").style.display = "none";
+        }
+        function onBezoeken() {
+            document.getElementById("overlay3").style.display = "block";
+        }
+        function offBezoeken() {
+            document.getElementById("overlay3").style.display = "none";
+        }
+        function onBusiness() {
+            document.getElementById("overlay4").style.display = "block";
+        }
+        function offBusiness() {
+            document.getElementById("overlay4").style.display = "none";
+        }
+        function onWebsite() {
+            document.getElementById("overlay5").style.display = "block";
+        }
+        function offWebstie() {
+            document.getElementById("overlay5").style.display = "none";
+        }
+        function onBestelportaal() {
+            document.getElementById("overlay6").style.display = "block";
+        }
+        function offBestelportaal() {
+            document.getElementById("overlay6").style.display = "none";
+        }
+        function onOnderzoek() {
+            document.getElementById("overlay7").style.display = "block";
+        }
+        function offOnderzoek() {
+            document.getElementById("overlay7").style.display = "none";
+        }
+        function onOplossing() {
+            document.getElementById("overlay8").style.display = "block";
+        }
+        function offOplossing() {
+            document.getElementById("overlay8").style.display = "none";
+        }
+        function onSamenwerking() {
+            document.getElementById("overlay9").style.display = "block";
+        }
+        function offSamenwerking() {
+            document.getElementById("overlay9").style.display = "none";
+        }
+        function onOntwikkeling() {
+            document.getElementById("overlay10").style.display = "block";
+        }
+        function offOntwikkeling() {
+            document.getElementById("overlay10").style.display = "none";
+        }
+    </script>
 </body>
 
 </html>
