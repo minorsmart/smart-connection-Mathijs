@@ -213,7 +213,7 @@
     bottom: 450px;
     left: 50%;
     width: 80%;
-    height: 700px;
+    height: 750px;
     font-size: 18x;
     padding: 10px;
     color: black;
@@ -223,4 +223,13 @@
     box-shadow: 8px 8px 16px 16px rgba(0, 0, 0, 0.514);
   }
   
+  #mess {
+    position: fixed;
+    background-color: black;
+    top: 20px;
+    right: 50px;
+    height: 10px;
+    width: 600px;
+    z-index: 1000;
+}
 
