@@ -109,6 +109,15 @@
                     </div>
                 </div>
             </div>
+            <div class="column">
+                <div class="card" onclick="onCompetenties()">
+                    <div class="container">
+                        <img src="/Portfolio/foto's/Competenties.webp" alt="Competenties" height="250" class="center">
+                        <h4><b>Competenties</b></h4>
+                        <p>In dit artikel vertel ik over de verschillende competenties waaraan ik heb gewerkt tijdens de minor.</p>
+                    </div>
+                </div>
+            </div>
         </div>
         <div id="overlay1" onclick="offPlant()">
             <div class="text">
@@ -128,12 +137,26 @@
                     <br>Op deze manier knippert de lamp maar eens in de 15 minuten. 
                 </p>
                 <p>
+                    Om gegevens van de sensoren af te lezen heb ik de ESP gekoppeld met de Blynk webapplicatie.
+                    <br>Daarop staan grafiekjes waar de informatie van de sensoren staan.
+                    <br>Ook is het mogelijk om vanuit Blynk handmatig de lamp aan te zetten en de plant water te geven.
+                    <br>Tot slot geeft de Blynk app een waarschuwing als de lamp stuk is, het water op is of als de ESP is uitgevallen.
+                </p>
+                <img src="/Portfolio/foto's/ESP.jpg" alt="ESP" height="200" width="200">
+                <img src="/Portfolio/foto's/Bakje.jpg" alt="bakje"  height="200"  width="200">
+                <p>
                     Als doel had ik voor de minor gesteld dat ik graag wou weten of ik na mijn studie Logistics Management nog een studie wil gaan doen.
                     <br>Ik heb altijd al interesse gehad in coderen en zat te kijken naar een mogelijke vervolgstudie in de ICT.
                     <br>Puzzeltjes oplossing vind ik erg leuk, dat is ook een rede waarom ik wiskunde leuk vind om te doen. Ik hoopte deze puzzels ook op te moeten lossen bij Logistics Management.
                     <br>Het bleek dat dit een stuk minder aanwezig was dan ik had gehoopt. Tijdens het coderen vond ik deze puzzels wel terug.
                     <br>Wanneer een stukje code niet werkte vond ik het leuk om uit te vogelen waar het probleem lag en hoe ik daar omheen kon werken.
                     <br>Na aanleiding van het programmeren van dit plantsysteem heb ik besloten om te gaan zoeken naar een geschikte studie voor als ik afgestudeerd ben.
+                </p>
+                <p>
+                    Voor het plantsyteem heb ik ook een pcb-plaatje en een bakje ontworpen.
+                    <br>Deze zijn naar mijn mening goed gelukt alleen ben ik tegen een probleem aangelopen toen ik mijn code wou uploaden naar de ESP.
+                    <br>Ik heb de EPS gebruikt voor een persoonlijk projectje en toen ik eenmaal de code van de plant wou uploaden kon dat niet meer door problemen met de flashknop.
+                    <br>Het is mij nog niet gelukt om dat op te lossen voor de seminar van de minor.
                 </p>
             </div>
         </div>
@@ -296,17 +319,174 @@
         </div>
         <div id="overlay8" onclick="offOplossing()">
             <div class="text">
-                <h1>test8</h1>
+                <h1>Oplossing</h1>
+                <p>
+                    Voor een mogelijke oplossing hebben we verschillende bedrijven benaderd over hoe zij het probleem zouden oplossen.
+                    <br>Een aantal ICT bedrijven had gereageerd met een idee dat richting een bestelportaal wees.
+                    <br>Ook vanuit Heel Metaal was aangegeven dat zij de verwachting hadden dat een bestelportaal een groot gedeelte van de problemen zou oplossen.
+                    <br>Naast een bestelportaal hebben we gekeken naar veranderingen binnen het proces, maar kwamen er al snel achter dat dat maar beperkt de problemen zou oplossen.
+                    <br>Daarnaast biedt een bestelportaal een betere toekomstbestendigheid door het gemak in het uitbreiden van de mogelijkheden.
+                </p>
+                <p>
+                    Nu we een oplossing hadden gekozen was het tijd om te kijken naar bedrijven die dit kunnen waarmaken voor Heel Metaal.
+                    <br>Om de bedrijven met elkaar te kunnen vergelijken en alvast een beeld te geven van onze verwachtingen hebben we een wensen- en eisenlijst opgesteld
+                    <br>Op deze lijst staan must-haves en like-to-haves. Op deze manier hebben we houvast tijdens het selecteren van de juiste bedrijven.
+                    <br>Deze eisen- en wensenlijst is gemaild naar een tiental bedrijven, daarnaast zijn een aantal bedrijven ook telefonisch benaderd.
+                </p>
+                <p>
+                    Veel bedrijven gaven aan dat onze ideeën zeer goed te implementeren waren.
+                    <br>De kostenschatting waar wij om vroegen was moeilijk in te schatten omdat nog niet alle informatie volledig duidelijk was.
+                    <br>Zo vroegen veel bedrijven zich af hoe het zat met de documentatie van de API van het ERP-systeem.
+                    <br>Dit was relevant om te bepalen hoe makkelijk het portaal te koppelen is aan het ERP-systeem.
+                    <br>Om meer informatie uit de bedrijven te krijgen hebben we gesprekken met ze ingepland om nog een keer de wensen- en eisenlijst na te lopen.
+                    <br>Hier kwam zeer nuttige informatie uit en gaf ons een gevoel bij een bedrijf.
+                </p>
+                <p>
+                    De uiteindelijke keuze voor een bedrijf was lastig te maken.
+                    <br>Alle bedrijven boden een persoonlijke oplossing aan waarbij de software speciaal voor Heel Metaal werd geschreven.
+                    <br>Ook gaven de bedrijven allemaal aan dat onze vragen goed te realiseren waren wat die manier van selectie onmogelijk maakte.
+                    <br>Uiteindelijk hebben we gekeken naar de kostenschatting van de bedrijven en of ze extra's hadden over andere bedrijven.
+                    <br>Zo bood 1 bedrijf een aparte fase 1 waarbij al een concept op tafel werd gelegd voor een vaste aparte prijs.
+                    <br>Dit is fijn zodat Heel Metaal eerst kan kijken of het is wat ze willen voordat er veel geld wordt geinvesteerd.
+                    <br>Er is ook gekeken naar vaste pakketten voor een bestelportaal, maar die waren te duur voor de schaal van het probleem.
+                </p>
+                <p>
+                    Ons uiteindelijke advies waren 3 bedrijven waar wij het beste gevoel bij hadden en die iets extra's boden.
+                    <br>We hebben hierbij een investeringsanalyse gemaakt per bedrijf om te laten zien wat de terugverdientijd zou zijn.
+                    <br>Deze kwam neer tussen de 4-7 jaar liggend aan het gekozen bedrijf.
+                </p>
             </div>
         </div>
         <div id="overlay9" onclick="offSamenwerking()">
             <div class="text">
-                <h1>test9</h1>
+                <h1>Samenwerking met Lars</h1>
+                <p>
+                    Tijdens het project heb ik samengewerkt met Lars.
+                    <br>Toen ik te horen kreeg dat ik met Lars ging samenwerken was ik benieuwd hoe hij zou zijn in een samenwerking.
+                    <br>Hij was een paar lessen afwezig geweest en had ook al aangegeven dat hij niet elke les er zou zijn omdat hij iets beters te doen had.
+                    <br>Dit maakt hem eigelijk een grote vraagteken op het gebied van samenwerken.
+                    <br>Ik had wel het gevoel dat hij een heel ander persoon zou zijn dan ik, maar dat we daardoor elkaar goed zouden kunnen aanvullen.
+                </p>
+                <p>
+                    De eerste weken van de samenwerking verliepen redelijk soepel.
+                    <br>We waren elkaar nog aan het aftasten, maar dingen zoals de taakverdeling gingen makkelijk.
+                    <br>Hoe meer weken voorbij gingen hoe duidelijker het werd dat we niet op 1 lijn lagen op het gebied van levensbeeld.
+                    <br>Onze gedachtegang was erg verschillend en we dachten bijna nergens hetzelfde over.
+                    <br>De eerste weken vond ik dit erg interessant om te leren hoe hij in het leven stond, maar naar mate het project vorderde ging ik mij er soms aan ergeren.
+                </p>
+                <p>
+                    Het moeilijkste punt van de samenwerking vond ik de sfeer.
+                    <br>Toen het project niet lekker begon te lopen en we een paar keer werden teruggefloten ging de motivatie erg omlaag.
+                    <br>Lars had hier ook last van en gaf aan dat hij met tegenzin bij Heel Metaal zat en eigenlijk wou stoppen met het project.
+                    <br>Ik voelde mij hier hetzelfde over wat ervoor zorgde dat we elkaar een beetje opfokte tegen de opdracht.
+                    <br>Uiteindelijk durfde wij allebei niet echt goed weg te lopen van het project door de mogelijke gevolgen voor de studie en minor.
+                    <br>Daarnaast was dit 1 van mijn valkuilen, weglopen bij problemen, en daar moest ik aan werken.
+                </p>
+                <p>
+                    Na gesprekken met de begeleiders kwamen we weer op een redelijk plan voor het project en onderzoek.
+                    <br>Ik kreeg weer positieve zin en kwam met goede moed naar Heel Metaal.
+                    <br>Tot mijn teleurstelling stond Lars daar niet hetzelfde in. Hij zag er nog steeds erg tegenop.
+                    <br>Het was op dat moment voor mij lastig om positief te blijven en de moed erin te houden.
+                    <br>Dit heeft op sommige momenten een beetje motivatie gekost.
+                </p>
+                <p>
+                    Uiteindelijk kijk ik terug naar onze samenwerking met gemengde gevoelens.
+                    <br>Eigenlijk is alles wat ik van de samenwerking had verwacht niet uitgekomen.
+                    <br>Persoonlijk denk ik dat het heel anders was gelopen als we vanaf het begin op 1 lijn hadden gezeten met Heel Metaal en school met de opdracht.
+                    <br>De eerste tegenslag heeft de sfeer te erg beinvloed om de samenwerking goed te beoordelen.
+                    <br>We hebben elkaar in de eerste weken naar beneden getrokken en vervolgens zaten we er te diep in om er alleen uit te kunnen komen.
+                </p>
             </div>
         </div>
         <div id="overlay10" onclick="offOntwikkeling()">
             <div class="text">
-                <h1>test10</h1>
+                <h1>Persoonlijke ontwikkeling</h1>
+                <p>
+                    Tijdens de minor heb ik veel geleerd en gedaan.
+                    <br>Hierdoor heb ik mij in deze periode op verschillende gebieden positief ontwikkeld.
+                    <br>Mijn belangrijkste doel voor de minor was het leren begrijpen en hopelijk een oplossing hebben voor mijn grootste probleem.
+                    <br>Tijdens mijn stage had ik moeite met vragen stellen aan mijn begeleider waardoor ik maar net mijn stage heb gehaald zonder trots te kunnen zijn op het eindproduct.
+                    <br>Dit probleem kwam al snel naar boven tijdens de kookworkshop. We kregen toen te horen hoe belangrijk het was om vragen te blijven stellen aan opdrachtgevers.
+                    <br>Het werd mij toen duidelijk dat ik daar nog steeds last van had en er aan moest werken, maar hoe wist ik nog niet.
+                </p>
+                <p>
+                    Met het project hoopte ik dat Lars vooral met de begeleiders zou kunnen praten zodat ik dat niet hoefde te doen.
+                    <br>Ik wist dat het beter zou zijn als ik mee zou gaan om te luisteren of zelf zou praten, maar ik hield mijzelf tegen.
+                    <br>Ik heb al vaker hierover nagedacht en denk dat ik uit angst voor oordelen niet goed durf vragen te stellen.
+                    <br>Om een oplossing te krijgen voor mijn probleem heb ik een gesprek met Mariëlle ingepland.
+                    <br>Het gesprek verliep best goed en ze gaf aan dat het kon helpen als ik bijvoorbeeld mee zou lopen in de pauzes met de begeleiders om zo een band op te bouwen.
+                    <br>Dit heb ik geprobeerd door 1 keer mee te lopen en toen merkte ik wel dat hier het probleem in zat.
+                </p>
+                <p>
+                    Ik sta altijd open voor personen, maar zodra ik iets aan hun moet vragen ben ik bang voor oordelen.
+                    <br>Er onstaat voor mij een soort tegenstanders gevoel met leidinggevende of begeleiders.
+                    <br>Dit weerhoudt mij ervan om vragen te stellen, zo voorkom ik dat ik iets fouts doe.
+                    <br>Uiteindelijk komt het er dan aan het einde van het project uit dat ik iets heel fouts heb gedaan, maar door niet te vragen heb ik dat uit kunnen stellen.
+                    <br>Na het wandelen met Robert-Jan voelde ik hoe dat voor mij uitmaakte als ik vragen wou stellen.
+                    <br>Helaas heb ik dat niet door kunnen zetten.
+                </p>
+                <p>
+                    Het moment dat we erachter kwamen dat wij iets anders deden met het project dan Heel Metaal graag had gezien werd het gevoel weer volledig tegenstander.
+                    <br>De motivatie voor het project ging naar beneden en ik voelde mij niet meer goed om verder te gaan met mijn persoonlijke ontwikkeling.
+                    <br>Ondanks dat ik er niet mee verder ben gegaan heb ik wel gezien en gevoeld hoe belangrijk de relatie is met de begeleider voor mij.
+                    <br>Ik neem dit zeker mee in mijn eindstage.
+                </p>
+                <p>
+                    Wat ik ook heb gezien en geleerd is dat het erg belangrijk is om te blijven praten met je begeleiders.
+                    <br>Het moment dat Niels ons heeft uitgelegd hoe hij verwachte dat wij te werk zouden gaan zag ik hoe dat eigenlijk heel goed is.
+                    <br>Door bijvoorbeeld een plan van aanpak te maken en deze voor te leggen aan de begeleider zorg je ervoor dat je onderzoekt wat de begeleider wil dat je onderzoekt.
+                    <br>Het is beter om hierover in gesprek te gaan dan gewoon je eigen ding te gaan doen.
+                    <br>Eigenlijk wist ik dit al en is mij dit ook al verteld vanuit school, maar ergens klikte het nu pas echt.
+                    <br>Het is ontzettend vervelend om een project in te leveren waar je niet tevreden over bent en dat is dus te voorkomen door te blijven communiceren met de opdrachtgever.
+                    <br>Dit is gebleken uit de kookworkshop, de AXA-casus en het project.
+                    <br>Ook het verschil van de verwachtingen vanuit Heel Metaal, school en Lars en ik had eerder opgelost kunnen worden als er beter werd gecommuniceerd.
+                </p>
+            </div>
+        </div>
+        <div id="overlay11" onclick="offCompetenties()">
+            <div class="text">
+                <h1>Competenties</h1>
+                <p>
+                    Tijdens de minor ben ik ook constant bezig geweest met het werken aan de competenties.
+                    <br>Om initiatief te tonen en betrokken te zijn ben ik elke les aanwezig geweest op 1 na.
+                    <br>Waar ik het gevoel had dat ik iest nuttigs kon inbrengen heb ik dat geprobeerd te doen.
+                    <br>Het moment wanneer niemand voor Aryzon koos heb ik het initiatief genomen om contact op te nemen met Leon.
+                    <br>Ik heb toen een gesprek met hem ingepland zodat hij de opdracht nog nader kon toelichten omdat ik van veel mensen hoorde dat de eerste presentatie onduidelijk was.
+                    <br>Daarna heb ik de mensen zonder project een berichtje gestuurd dat ze welkom waren om deel te nemen.
+                </p>
+                <p>
+                    Voor mijn meningen en adviezen tijdens het onderzoek heb ik gebruik gemaakt van litaruur die beschikbaar is op Google Scholar.
+                    <br>Ik heb daarvoor alleen artikelen gebruikt die vaker zijn geciteerd met zo'n recent mogelijke datum.
+                    <br>Het filter stond op 2018 of daarboven, maar doordat Lean Management al best oud is zitten er ook oudere documenten tussen.
+                    <br>Om het advies te ondersteunen hebben we meerdere bedrijven benaderd waardoor die elkaar bevestigen dat de oplossing de juiste is.
+                </p>
+                <p>
+                    Als leerdoel voor de minor had ik onderandere om kennis te maken met coderen en de ICT om zo te bepalen of dat mogelijk een vervolgstudie kan zijn.
+                    <br>Dit ligt binnen mijn interessegebied, maar buiten mijn vakgebied.
+                    <br>Daarnaast had ik als leerdoel om vragen te leren stellen aan begeleiders/docenten.
+                    <br>Naar mijn mening is dat aardig gelukt, maar niet volledig.
+                    <br>Ik heb de docenten regelmatig benaderd met vragen, maar vooral de begeleiders van het project vond ik moeilijk te benaderen.
+                </p>
+                <p>
+                    Tijdens het project ben ik daarom ook zeer bewust bezig geweest met mijn persoonlijke groei.
+                    <br>Het was voor mij erg belangrijk om mijn persoonlijke moeilijkheden op te lossen voor mijn eindstage.
+                    <br>Persoonlijk denk ik dat ik daar goed mee op weg ben op dit moment.
+                    <br>Eerst keek ik erg op tegen de eindstage, maar nu ga ik er met vertrouwen naar toe werken.
+                </p>
+                <p>
+                    Ik heb veel zelfreflectie gebruikt om te leren.
+                    <br>Vooral tijdens het project ben ik tegen persoonlijkheden aangelopen van mijzelf waardoor ik mij nu beter ken dan daarvoor.
+                    <br>Ik wist al dat ik meestal de makkelijke weg kies, maar tijdens het project bleek dat ik dat soms ook onbewust doe.
+                    <br>Door zelfreflectie ben ik daar onder andere achter gekomen dat het erger is dan ik zelf dacht.
+                    <br>Dat is ook zeker een probleem om aan te werken.
+                    <br>Niels had als tip gegeven om de dag te beginnen met de moeilijke dingen of waar je tegenop kijkt. Dit heb ik gelijk toegepast met het schrijven van mijn portfolio.
+                </p>
+                <p>
+                    Andere actief helpen groeien vond ik best lastig.
+                    <br>Als mensen vragen hadden was ik zeker bereid om ze te helpen, maar met persoonlijke ontwikkeling vond ik dat erg lastig.
+                    <br>Zo heb ik geprobeerd Lars te helpen door hem soms een spiegel voor te houden.
+                    <br>Hij had hier niet om gevraagd, maar op sommige gebieden denk ik wel dat hij meer zelfreflectie kan gebruiken.
+                </p>
             </div>
         </div>
     </div>
@@ -370,6 +550,12 @@
         }
         function offOntwikkeling() {
             document.getElementById("overlay10").style.display = "none";
+        }
+        function onCompetenties() {
+            document.getElementById("overlay11").style.display = "block";
+        }
+        function offCompetenties() {
+            document.getElementById("overlay11").style.display = "none";
         }
     </script>
 </body>
